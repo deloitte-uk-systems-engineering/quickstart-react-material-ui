@@ -74,7 +74,7 @@ app.use((err, req, res, next) => {
     res.status(status);
 });
 
-const port = process.env.PORT || '3001';
+const port = process.env.PORT || '80';
 app.listen(port, () => {
     logger.info(`Express server is running on port ${port}`);
 });

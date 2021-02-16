@@ -16,6 +16,6 @@ WORKDIR /usr/src/app
 COPY server.js ./
 COPY --from=build-client build ./client/build
 COPY --from=install-server-deps node_modules node_modules
-EXPOSE 3001
+EXPOSE 80
 ENV NODE_ENV=production
 CMD ["node", "server.js" ]

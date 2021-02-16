@@ -5,4 +5,4 @@ services:
         image: reactmaterial
         container_name: reactmaterial
         ports:
-            - 3001:3001
+            - 80:80

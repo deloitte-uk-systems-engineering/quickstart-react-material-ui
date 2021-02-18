@@ -38,7 +38,7 @@ _**NOTE:** The server uses [Winston](https://github.com/winstonjs/winston) for l
 
 ## Deploy to AWS Fargate via Terraform
 
--   Navigate to `deploy/personal` for instructions on deploying app onto AWS Fargate on your **personal** AWS account
+Navigate to `deploy/personal` for instructions on deploying app to AWS Fargate on your **personal** AWS account
 
 ```sh
 .

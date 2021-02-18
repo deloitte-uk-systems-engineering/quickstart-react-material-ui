@@ -36,15 +36,6 @@ resource "aws_iam_role_policy" "ecs_task_execution_role" {
             "logs:PutLogEvents"
         ],
         "Resource": "*"
-    },
-     {
-      "Effect": "Allow",
-      "Action": [
-        "secretsmanager:GetSecretValue"
-      ],
-      "Resource": [
-        "${var.mongo_password_secret_arn}"
-      ]
     }
   ]
 }

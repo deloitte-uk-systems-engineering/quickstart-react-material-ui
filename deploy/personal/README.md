@@ -22,12 +22,12 @@ aws configure # configure your AWS CLI profile
 *   Populate `terraform.tfvars`:
 
 ```bash
-default_region      = "us-east-1"
-docker_username     = "matlau"
-github_username     = "MatthewCYLau"
-github_project_name = "quickstart-react-material-ui"
-app_name            = "react-material-ui-app"
-environment         = "staging"
+default_region      = "<YOUR_AWS_DEFAULT_REGION>"
+docker_username     = "<YOUR_DOCKER_USERNAME>"
+github_username     = "<YOUR_GITHUB_USERNAME>"
+github_project_name = "<YOUR_GITHUB_PROJECT_NAME>"
+app_name            = "<GIVE_YOUR_APP_A_NAME!>"
+environment         = "<ENVIRONMENT_NAME>"
 ```
 
 ## Deploy

@@ -1,4 +1,5 @@
 import React from 'react';
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import {
     useMediaQuery
 } from '@material-ui/core';
@@ -6,6 +7,7 @@ import { ThemeProvider } from '@material-ui/core/styles';
 import useStyles from './App.style';
 import createTheme from '../../config/Theme';
 
+import Routes from "../../routers/Routes";
 import Header from '../Header'
 import HomePage from '../../pages/HomePage'
 
@@ -14,10 +16,15 @@ function App() {
     const styles = useStyles();
 
     return (
-        <div className={styles.root}>
-            <Header/>
-            <HomePage/>
-        </div>
+        <Router>
+            <div className={styles.root}>
+                <Header/>
+                <Switch>
+                    <Route exact path="/" component={HomePage} />
+                    <Route component={Routes} />
+                </Switch>
+            </div>
+        </Router>
     );
 }
 

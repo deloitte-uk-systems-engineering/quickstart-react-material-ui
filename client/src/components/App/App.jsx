@@ -1,10 +1,8 @@
 import React from 'react';
 import {
-    AppBar,
     Container,
     Grid,
     Link,
-    Toolbar,
     Typography,
     useMediaQuery
 } from '@material-ui/core';
@@ -16,6 +14,8 @@ import { ThemeProvider } from '@material-ui/core/styles';
 import sampleImage from '../../images/sample_image.svg';
 import useStyles from './App.style';
 import createTheme from '../../config/Theme';
+
+import Header from '../Header'
 
 function App() {
     const styles = useStyles();
@@ -121,13 +121,7 @@ function App() {
 
     return (
         <div className={styles.root}>
-            <AppBar component="header" position="static">
-                <Toolbar>
-                    <Typography variant="h6">
-                        React | Material UI
-                    </Typography>
-                </Toolbar>
-            </AppBar>
+            <Header/>
             <Container component="main" maxWidth="lg" className={styles.main}>
                 <div className={styles.content}>
                     <img className={styles.image} src={sampleImage} alt="Sample" />

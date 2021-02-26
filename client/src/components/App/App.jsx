@@ -156,7 +156,7 @@ function App() {
     );
 }
 
-export default function () {
+export default () => {
     const prefersDarkMode = useMediaQuery('(prefers-color-scheme: dark)');
     const theme = React.useMemo(() => createTheme(prefersDarkMode), [
         prefersDarkMode
@@ -179,4 +179,4 @@ export default function () {
             <App />
         </ThemeProvider>
     );
-}
+};

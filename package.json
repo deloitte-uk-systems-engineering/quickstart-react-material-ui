@@ -12,7 +12,7 @@
         "serve": "node server.js",
         "prepare": "husky install",
         "prettier-fix": "./node_modules/.bin/prettier --write \"{src,uiTest*}/**/*.{js,css,scss}\" --config .prettierrc",
-        "eslint-check": "./node_modules/eslint/bin/eslint.js \"{src,uiTest*}/**/*.js\" --config .eslintrc.json --max-warnings=0",
+        "eslint-check": "./node_modules/eslint/bin/eslint.js --config .eslintrc.json --max-warnings=0 client/src/*.js",
         "prettier-check": "./node_modules/.bin/prettier --check \"{src,uiTest*}/**/*.{js,css,scss}\" --config .prettierrc"
     },
     "repository": {

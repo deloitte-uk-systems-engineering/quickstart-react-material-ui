@@ -5,15 +5,15 @@ import responsiveFontSizes from '@material-ui/core/styles/responsiveFontSizes';
 export default (darkMode) => {
     const palette = createPalette({
         /**
-        * In this example, the primary and secondary colours have been overwritten
-        * using the Deloitte colour palette. When defining custom colours, the only
-        * shade that must be defined is 'main' - all other colours (i.e. 'light',
-        * 'dark' and 'contrastText') will be augmented from that colour. However, as
-        * you can see below, these colours can also be explicitly defined.
-        *
-        * See: https://material-ui.com/customization/palette/
-        * See: https://material-ui.com/customization/color/
-        */
+         * In this example, the primary and secondary colours have been overwritten
+         * using the Deloitte colour palette. When defining custom colours, the only
+         * shade that must be defined is 'main' - all other colours (i.e. 'light',
+         * 'dark' and 'contrastText') will be augmented from that colour. However, as
+         * you can see below, these colours can also be explicitly defined.
+         *
+         * See: https://material-ui.com/customization/palette/
+         * See: https://material-ui.com/customization/color/
+         */
         primary: {
             main: '#86BC25',
             light: '#C4D600',
@@ -21,7 +21,7 @@ export default (darkMode) => {
         },
         secondary: {
             main: '#00A3E0',
-            light: '#62B5E5',
+            light: '#62B5E5'
         },
         text: {
             secondary: 'rgba(0, 0, 0, 0.56)'
@@ -38,21 +38,21 @@ export default (darkMode) => {
     });
 
     /**
-    * The default Material UI theme can be extended/overwritten by passing
-    * options into the 'createMuiTheme' function. In this example, only the
-    * palette is being overwritten, however there are many other parts of the
-    * theme that can be customised including spacing, typography and screen
-    * breakpoints.
-    *
-    * See: https://material-ui.com/customization/theming/
-    * See: https://material-ui.com/customization/default-theme/
-    */
+     * The default Material UI theme can be extended/overwritten by passing
+     * options into the 'createMuiTheme' function. In this example, only the
+     * palette is being overwritten, however there are many other parts of the
+     * theme that can be customised including spacing, typography and screen
+     * breakpoints.
+     *
+     * See: https://material-ui.com/customization/theming/
+     * See: https://material-ui.com/customization/default-theme/
+     */
     const theme = createMuiTheme({ palette });
 
     /**
-    * Generate responsive typography settings.
-    *
-    * See: https://material-ui.com/customization/theming/#responsivefontsizes-theme-options-theme
-    */
+     * Generate responsive typography settings.
+     *
+     * See: https://material-ui.com/customization/theming/#responsivefontsizes-theme-options-theme
+     */
     return responsiveFontSizes(theme);
 };

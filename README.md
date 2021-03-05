@@ -36,6 +36,17 @@ npm run serve
 
 _**NOTE:** The server uses [Winston](https://github.com/winstonjs/winston) for logging and writes a copy of all logs to files within the `/logs` directory._
 
+## Deploy to AWS Fargate via Terraform
+
+Navigate to `deploy/personal` for instructions on deploying app to AWS Fargate on your **personal** AWS account
+
+```sh
+.
+├── deploy
+│   ├── dcloud # instructions on deploying app to Deloitte Cloud
+│   └── personal # instructions on deploying app to personal AWS account
+```
+
 ## Docker
 
 A sample Docker deployment configuration has been included. Run the following command to build and deploy the docker image:

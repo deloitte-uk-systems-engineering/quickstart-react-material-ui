@@ -1,45 +1,45 @@
 {
-  "name": "deloitte-react-material-ui",
-  "version": "1.0.0",
-  "description": "Boilerplate for quick-starting React / Material UI applications that have a NodeJS back-end.",
-  "main": "server.js",
-  "scripts": {
-    "postinstall": "npm install --prefix client",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "test:client": "npm test --prefix client",
-    "build": "npm run --prefix client/ build",
-    "start": "npm run --prefix client/ start",
-    "serve": "node server.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://rmcgeehan_swth@bitbucket.org/delsiuk/quickstart-react-material-ui.git"
-  },
-  "keywords": [
-    "deloitte",
-    "react",
-    "nodejs",
-    "boilerplate",
-    "quickstart",
-    "client",
-    "server"
-  ],
-  "author": "Ricky McGeehan",
-  "license": "ISC",
-  "homepage": "https://bitbucket.org/delsiuk/quickstart-react-material-ui",
-  "dependencies": {
-    "express": "^4.17.1",
-    "morgan": "^1.10.0",
-    "path": "^0.12.7",
-    "winston": "^3.3.3"
-  },
-  "devDependencies": {
-    "babel-eslint": "^10.1.0",
-    "eslint": "^7.20.0",
-    "eslint-config-airbnb": "^18.2.1",
-    "eslint-plugin-import": "^2.22.1",
-    "eslint-plugin-jsx-a11y": "^6.4.1",
-    "eslint-plugin-react": "^7.22.0",
-    "eslint-plugin-react-hooks": "^4.2.0"
-  }
+    "name": "deloitte-react-material-ui",
+    "version": "1.0.0",
+    "description": "Boilerplate for quick-starting React / Material UI applications that have a NodeJS back-end.",
+    "main": "server.js",
+    "scripts": {
+        "postinstall": "npm install --prefix client",
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "test:client": "npm test --prefix client",
+        "build": "npm run --prefix client/ build",
+        "start": "npm run --prefix client/ start",
+        "serve": "node server.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://rmcgeehan_swth@bitbucket.org/delsiuk/quickstart-react-material-ui.git"
+    },
+    "keywords": [
+        "deloitte",
+        "react",
+        "nodejs",
+        "boilerplate",
+        "quickstart",
+        "client",
+        "server"
+    ],
+    "author": "Ricky McGeehan",
+    "license": "ISC",
+    "homepage": "https://bitbucket.org/delsiuk/quickstart-react-material-ui",
+    "dependencies": {
+        "express": "^4.17.1",
+        "morgan": "^1.10.0",
+        "path": "^0.12.7",
+        "winston": "^3.3.3"
+    },
+    "devDependencies": {
+        "babel-eslint": "^10.1.0",
+        "eslint": "^7.20.0",
+        "eslint-config-airbnb": "^18.2.1",
+        "eslint-plugin-import": "^2.22.1",
+        "eslint-plugin-jsx-a11y": "^6.4.1",
+        "eslint-plugin-react": "^7.22.0",
+        "eslint-plugin-react-hooks": "^4.2.0"
+    }
 }

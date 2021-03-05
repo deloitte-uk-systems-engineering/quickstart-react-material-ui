@@ -9,7 +9,9 @@
     "test:client": "npm test --prefix client",
     "build": "npm run --prefix client/ build",
     "start": "npm run --prefix client/ start",
-    "serve": "node server.js"
+    "serve": "node server.js",
+    "prepare": "husky install",
+    "prettier-fix": "./node_modules/.bin/prettier --write \"client/src/**/*.{js,css,scss}\" --config .prettierrc"
   },
   "repository": {
     "type": "git",
@@ -40,6 +42,8 @@
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-jsx-a11y": "^6.4.1",
     "eslint-plugin-react": "^7.22.0",
-    "eslint-plugin-react-hooks": "^4.2.0"
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "husky": "^5.1.2",
+    "prettier": "^2.2.1"
   }
 }
